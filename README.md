@@ -20,17 +20,21 @@ An integer value is required to cipher a given text. The integer value is known 
 has been moved down.
 
 ## BDD
-* After running the code, Select the process,
- - Input either e for encoding or d for decoding
+* After running the code, Select the process
+
+Input either e for encoding or d for decoding
 
 * Enter the message
-- Input the message you want to display
+
+Input the message you want to display
 
 * Enter the key 
-- Input the key number
+
+Input the key number
 
 * After getting the output displayed, choosed whether to continue or to end
-- Input continue or quit
+
+Input continue or quit
 
 **Example**
 * When encrypting, a person looks up each letter of the message in the "plain"
