@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ced37508-fc42-490d-8548-549cdc3744e4" name="Changes" comment="">
+    <list default="true" id="ced37508-fc42-490d-8548-549cdc3744e4" name="Changes" comment="added decoding">
       <change afterPath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Decoding.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Encoding.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/org/safaricommoringa/AppTest.java" afterDir="false" />
@@ -201,5 +201,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added decoding" />
+    <option name="LAST_COMMIT_MESSAGE" value="added decoding" />
   </component>
 </project>
