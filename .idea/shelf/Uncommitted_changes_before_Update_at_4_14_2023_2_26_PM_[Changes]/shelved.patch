@@ -1,0 +1,163 @@
+Index: src/main/java/org/safaricommoringa/App.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.safaricommoringa;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class App {\r\n    public static void main(String[] args) {\r\n\r\n        Scanner userInputObject = new Scanner(System.in);\r\n        System.out.println(\"Select process (e-encode/d-decode\");\r\n        String process = userInputObject.next();\r\n        System.out.println(process);\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/safaricommoringa/App.java b/src/main/java/org/safaricommoringa/App.java
+--- a/src/main/java/org/safaricommoringa/App.java	(revision 408abf019db7b70056b8d8c597f2465f1ee66498)
++++ b/src/main/java/org/safaricommoringa/App.java	(date 1681470384868)
+@@ -1,14 +1,40 @@
+ package org.safaricommoringa;
+ 
++import java.io.Console;
+ import java.util.Scanner;
+ 
+ public class App {
+     public static void main(String[] args) {
+-
+         Scanner userInputObject = new Scanner(System.in);
+-        System.out.println("Select process (e-encode/d-decode");
+-        String process = userInputObject.next();
+-        System.out.println(process);
++//        Console console = new Console();
++        do {
++            System.out.println("Select process (e-encode/d-decode:");
++            String process = userInputObject.nextLine();
++
++            System.out.println("Enter message:");
++            String msg = userInputObject.nextLine();
++
++            System.out.println("Enter key:");
++            int key = userInputObject.nextInt();
++
++            System.out.println("Processing...");
++            System.out.println(process);
++            if (process.startsWith("e")){
++                String output = Encoding.encode(msg, key);
++                System.out.println(output);
++            } else if (process.startsWith("d")) {
++                System.out.println("Decoding");
++            } else {
++                System.out.println("Invalid process");
++                continue;
++            }
++            System.out.println("Do you want to quit or continue");
++            String nextStep = userInputObject.nextLine();
++            if (nextStep.startsWith("q")){
++                break;
++            }
++        } while(true);
++
+ 
+     }
+ }
+Index: src/main/java/org/safaricommoringa/Encoding.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/safaricommoringa/Encoding.java b/src/main/java/org/safaricommoringa/Encoding.java
+new file mode 100644
+--- /dev/null	(date 1681470384898)
++++ b/src/main/java/org/safaricommoringa/Encoding.java	(date 1681470384898)
+@@ -0,0 +1,21 @@
++package org.safaricommoringa;
++
++public class Encoding {
++    private static String alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
++
++    public static String encode(String msg, int key){
++        String output = "";
++        for(char c: msg.toCharArray()){
++            int charPos = alphabets.indexOf(c);
++            if (charPos == -1){
++                output = output + c;
++                continue;
++            }
++            int tempNewPos = charPos + key;
++            int newPos = tempNewPos > 25 ?  tempNewPos % 26 : tempNewPos;
++            char replacement = alphabets.charAt(newPos);
++            output = output + replacement;
++        }
++        return output;
++    }
++}
+Index: src/main/java/org/safaricommoringa/Decoding.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/org/safaricommoringa/Decoding.java b/src/main/java/org/safaricommoringa/Decoding.java
+new file mode 100644
+--- /dev/null	(date 1681470384928)
++++ b/src/main/java/org/safaricommoringa/Decoding.java	(date 1681470384928)
+@@ -0,0 +1,4 @@
++package org.safaricommoringa;
++
++public class Decoding {
++}
+Index: src/test/java/org/safaricommoringa/DecodingTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/safaricommoringa/DecodingTest.java b/src/test/java/org/safaricommoringa/DecodingTest.java
+new file mode 100644
+--- /dev/null	(date 1681470385018)
++++ b/src/test/java/org/safaricommoringa/DecodingTest.java	(date 1681470385018)
+@@ -0,0 +1,7 @@
++package org.safaricommoringa;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class DecodingTest {
++
++}
+\ No newline at end of file
+Index: src/test/java/org/safaricommoringa/AppTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/safaricommoringa/AppTest.java b/src/test/java/org/safaricommoringa/AppTest.java
+new file mode 100644
+--- /dev/null	(date 1681470385048)
++++ b/src/test/java/org/safaricommoringa/AppTest.java	(date 1681470385048)
+@@ -0,0 +1,7 @@
++package org.safaricommoringa;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class AppTest {
++
++}
+\ No newline at end of file
+Index: src/test/java/org/safaricommoringa/EncodingTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/org/safaricommoringa/EncodingTest.java b/src/test/java/org/safaricommoringa/EncodingTest.java
+new file mode 100644
+--- /dev/null	(date 1681470385079)
++++ b/src/test/java/org/safaricommoringa/EncodingTest.java	(date 1681470385079)
+@@ -0,0 +1,16 @@
++package org.safaricommoringa;
++
++import org.junit.jupiter.api.DisplayName;
++import org.junit.jupiter.api.Test;
++
++import static org.junit.jupiter.api.Assertions.*;
++
++class EncodingTest {
++
++    @Test
++    @DisplayName("Encoding works as expected")
++    void encode() {
++        assertEquals("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", Encoding.encode("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", 23));
++        assertEquals("B@#", Encoding.encode("A@#", 1));
++    }
++}
+\ No newline at end of file
