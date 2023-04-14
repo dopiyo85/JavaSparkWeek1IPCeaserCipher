@@ -1,7 +1,7 @@
 package org.safaricommoringa;
 
 public class Decoding {
-    private static String decodeAlphabets = "XYZABCDEFGHIJKLMNOPQRSTUVW";
+    public static final String decodeAlphabets = "XYZABCDEFGHIJKLMNOPQRSTUVW";
 
     public static String decode(String msg, int key){
         String output = "";

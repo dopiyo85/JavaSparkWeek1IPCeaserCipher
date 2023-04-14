@@ -7,6 +7,8 @@
     <list default="true" id="ced37508-fc42-490d-8548-549cdc3744e4" name="Changes" comment="added some notes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Decoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Decoding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Encoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Encoding.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/safaricommoringa/Encoding.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -140,9 +145,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.EncodingTest" />
         <item itemvalue="Gradle.DecodingTest" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Gradle.EncodingTest" />
       </list>
     </recent_temporary>
   </component>
