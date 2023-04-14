@@ -7,7 +7,11 @@
 ## Description
 
 This project is my week one Java IP about Ceaser Cipher. 
- <img src="/images/caesar-cipher-program-in-java.png" width="500px" height="300px">
+
+
+![Caesar Cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Caesar_cipher_left_shift_of_3.svg/320px-Caesar_cipher_left_shift_of_3.svg.png)
+
+
 
 It is one of the simplest and most used encryption techniques. In this technique, each letter of the given text is replaced by a letter of some fixed 
 number of positions down the alphabet. For example, with a shift of 1, X would be replaced by Y, Y would become Z, and so on. Julius Caesar was the first
@@ -31,13 +35,13 @@ has been moved down.
 **Example**
 * When encrypting, a person looks up each letter of the message in the "plain"
 line and writes down the corresponding letter in the "cipher" line.
-
 - Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
 - Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
 
-**Expected output is either 
-*Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
-*Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD*** 
+**Expected output is either**
+
+- Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+- Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
 
 
 ## Setup/Installation Requirements
