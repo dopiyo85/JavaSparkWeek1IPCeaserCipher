@@ -11,10 +11,11 @@ public class App {
             System.out.println("Select the Process: (e-encode/d-decode:");
             String process = userInputObject.nextLine();
 
-            System.out.println("Enter Your Message:");
+            System.out.println("Enter Your Message:for Encoding; THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n" +
+                    "Decoding; QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD");
             String msg = userInputObject.nextLine();
 
-            System.out.println("Enter Any key: From 0 - 25");
+            System.out.println("Enter Any key: From 0 - 25; 23 for encoding and 3 for decoding");
             int key = userInputObject.nextInt();
 
             System.out.println("Your Program is Processing...");
