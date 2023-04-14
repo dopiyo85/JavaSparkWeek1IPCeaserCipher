@@ -34,7 +34,7 @@ Input the key number 23 for encoding and 3 for decoding
 
 * After getting the output displayed, choosed whether to continue or to end
 
-Input continue or quit
+Input continue or quit.
 
 **Example**
 * When encrypting, a person looks up each letter of the message in the "plain"
