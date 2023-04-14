@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ced37508-fc42-490d-8548-549cdc3744e4" name="Changes" comment="added some notes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Decoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Decoding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Encoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/safaricommoringa/Encoding.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <recent name="org.safaricommoringa" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.EncodingTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.safaricommoringa.App" />
       <module name="JavaSparkWeek1IPCeaserCipher.main" />

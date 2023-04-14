@@ -4,18 +4,18 @@ public class Decoding {
     public static final String decodeAlphabets = "XYZABCDEFGHIJKLMNOPQRSTUVW";
 
     public static String decode(String msg, int key){
-        String output = "";
+        StringBuilder output = new StringBuilder();
         for(char c: msg.toCharArray()){
             int charPos = decodeAlphabets.indexOf(c);
             if (charPos == -1){
-                output = output + c;
+                output.append(c);
                 continue;
             }
             int tempNewPos = charPos + key;
             int newPos = tempNewPos > 25 ?  tempNewPos % 26 : tempNewPos;
             char replacement = decodeAlphabets.charAt(newPos);
-            output = output + replacement;
+            output.append(replacement);
         }
-        return output;
+        return output.toString();
     }
 }
