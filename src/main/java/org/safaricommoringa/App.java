@@ -43,10 +43,11 @@ public class App {
                     "Decoding; QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD");
             mainObject.setMessage(userInputObject.nextLine());
 
-            System.out.println("Enter Any key: From 0 - 25; 23 for encoding and 3 for decoding");
+            System.out.println("Enter Any key: From 0 - 25\n"
+                    + "eg 23 for encoding and decoding THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG");
             mainObject.setKey(userInputObject.nextInt());
 
-            System.out.println("Your Program is Processing...");
+            System.out.println("Your Ceaser Cipher Program is Processing...");
             System.out.println(mainObject.getProcess());
             if (mainObject.getProcess().startsWith("e")){
                 String output = Encoding.encode(mainObject.getMessage(), mainObject.getKey());
