@@ -30,7 +30,7 @@ Input the message you want to display
 
 * Enter the key 
 
-Input the key number
+Input the key number 23 for encoding and 3 for decoding
 
 * After getting the output displayed, choosed whether to continue or to end
 
